@@ -2,7 +2,7 @@
 
 by *Suwichaya Suwanwimolkul, Ph.D.*
 
-The lecture handout for [`Lecture I: What is an estimator?` ](Lectures/Tutorial1/lecture1.pdf) and [Homework](Lectures/Tutorial1/hw1.pdf) are attached in this folder.
+The lecture handout for [`Lecture I: What is an estimator?` ](lecture1.pdf) and [Homework](hw1.pdf) are attached in this folder.
 
 `main.ipynb` contains the coding exercies and examples used as parts of `Lecture I`. 
 
@@ -16,7 +16,7 @@ The topics covered in `main.ipynb` are:
     - [Bianess](#biasness)
     - [MSE](#mse)
     - [Consistency](#consistency)
-- [HW1.2](#hw12) see [Homework I](Lectures/Tutorial1/hw1.pdf)
+- [HW1.2](#hw12) see [Homework I](hw1.pdf)
     - [Biased Estimator](#biased-estimator)
     - [Unbiased Estimator](#unbiased-estimator)
      
@@ -29,7 +29,7 @@ Install dependenies listed in `requirements.txt` by
 pip install -r requirements.txt
 ```
 
-Then, start the jupyternote book [`main.ipynb`](Tutorial1/main.ipynb).
+Then, start the jupyternote book [`main.ipynb`](main.ipynb).
  
 
  
