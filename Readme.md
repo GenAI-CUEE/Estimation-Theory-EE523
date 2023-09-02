@@ -1,19 +1,18 @@
-# Tutorial
+This site is parts of Estimation Theory EE2102523 
+by *Suwichaya Suwanwimolkul*.
 
-This site provides the coding supplementaries for Estimation Theory EE2102523 by Suwichaya Suwanwimolkul.
-
-The goal of this tutorial is to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
+`Goal`: to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
  
 
-## Target coding meterials
+## Topics
 
 I hope that at the end, I will be able to provide the coding scripts & excercises for the following topics
 
-- [x] [Tutorial 1](Tutorial1/main.ipynb) => Lecture 1: Sampling from distirbution, example of estimators (sample mean/sample variances), estimator properties (bias, mse, consistency)
+- [x] [Tutorial 1](Tutorial1/main.ipynb): Sampling from distirbution, example of estimators (sample mean/sample variances), estimator properties (bias, mse, consistency). This support Lecture 1 in Estimation Theory EE2102523 
  
-- [ ] Tutorial 2 => Lecture 2: Convergence in distribution, Central limit Theorems, Weak/Strong law of large number 
+- [ ] Tutorial 2: Convergence in distribution, Central limit Theorems, Weak/Strong law of large number. This supports parts of Lecture 2. 
 
-- [ ] Tutorial 3 => Lecture 3-6: ML Esitmation, KL-Divergence minimizatoin, MAP Esitmation  
+- [ ] Tutorial 3: ML Esitmation, KL-Divergence minimizatoin, MAP Esitmation. This provides the use cases for Lecture 3-6.   
  
 
 ## Getting Started
