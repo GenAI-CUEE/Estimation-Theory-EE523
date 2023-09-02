@@ -1,7 +1,7 @@
-This site is parts of Estimation Theory EE2102523 
+This Github page is a part of **Estimation Theory EE2102523** 
 by *Suwichaya Suwanwimolkul*.
 
-`Goal`: to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
+Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
  
 
 ## Topics
