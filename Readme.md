@@ -23,4 +23,4 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 3. You may execute the `main` file in python or ipynb fileformat. 
 
 * Course materials (such as HW and lecture notes) maybe provided in each `Tutorial` folder. 
-* Each of these tutorials is run independently on its own environment. 
+* Each tutorial runs independently in its own environment. 
