@@ -18,7 +18,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 ## Getting Started
 
 1. Change the directory to the `Tutorial` folder.
-2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Tutorial1_Readme.md)) for install dependencies. 
+2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Readme.md)) for install dependencies. 
 3. You may execute the `main` file in python or ipynb fileformat. 
 
 * Course materials (such as HW and lecture notes) maybe provided in each `Tutorial` folder. 
