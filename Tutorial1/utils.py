@@ -1,6 +1,12 @@
+# This code is part of Estimation Theory EE2102523 
+# Lecture I: What is an Estimator? 
+# by Suwichaya Suwanwimolkul 
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+
 
 def sample_mean(data): 
     return np.mean(data)

@@ -10,7 +10,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 
 - [x] [Tutorial 1](Tutorial1/main.ipynb): Sampling from distirbution, example of estimators (sample mean/sample variances), estimator properties (bias, mse, consistency). This support Lecture 1 in Estimation Theory EE2102523 
  
-- [ ] Tutorial 2: Convergence in distribution, Central limit Theorems, Weak/Strong law of large number. This supports parts of Lecture 2. 
+- [x] [Tutorial 2](Tutorial2/main.ipynb): Convergence in distribution, Central limit Theorems, KL divergence, convergence in probability, almost sure Convergence simulation, This supports the handouts and homework in Lecture II. 
 
 - [ ] Tutorial 3: ML Esitmation, KL-Divergence minimizatoin, MAP Esitmation. This provides the use cases for Lecture 3-6.   
  

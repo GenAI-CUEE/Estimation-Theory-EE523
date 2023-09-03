@@ -36,5 +36,5 @@ Then, start the jupyternote book [`main.ipynb`](main.ipynb).
 ### Final Notes.
 -  The coding examples of sampling, biased, and unbiased estimation are adopted from [Sampling \& Estimation EP.3 by Khalel Corona](https://www.youtube.com/watch?v=pNbDigYLqSY).
 -  Don't forget to install the dependency `pip install -r requirements.txt`
-- `utils.py` contains the supplenmary implementations for each fucntion used in `Lecture1.ipynb` 
+- `utils.py` contains the supplenmary implementations for each fucntion used in `main.ipynb` 
 - Good luck! 
