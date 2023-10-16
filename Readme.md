@@ -22,7 +22,13 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Almost sure Convergence simulation. 
     - Homework Simulation
 
-- [ ] Tutorial 3: ML Esitmation, KL-Divergence minimizatoin, MAP Esitmation. This provides the use cases for Lecture 3-6.   
+- [x] Tutorial 3.1: ML Esitmation, KL-Divergence minimizatoin
+    - KL Divergence
+    - Central Limit Theorem Example 
+    - Variational Auto Encoder
+    - Why KL Divergence is used in VAE
+
+- [ ] Tutorial 3.2: MAP Esitmation. This provides the use cases for Lecture 3-6.   
  
 
 ## Getting Started
