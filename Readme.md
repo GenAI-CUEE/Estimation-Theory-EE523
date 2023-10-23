@@ -22,7 +22,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Almost sure Convergence simulation. 
     - Homework Simulation
 
-- [x] [Tutorial 3](Tutorial3/main.ipynb): ML Esitmation, KL-Divergence minimizatoin
+- [x] [Tutorial 3](Tutorial3/main.ipynb):  KL-Divergence Loss
     - KL Divergence
     - Central Limit Theorem Example 
     - Variational Auto Encoder
@@ -33,7 +33,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Wiener Filtering
     - Auto/Cross-Correlation Checking 
     - MAP Esitmation 
-    - Gaussinal-Laplacian Conjugate Prior and extension to estimate other unknown in the posteriori distribution
+    - Gaussian-Laplacian conjugate prior and extension to estimate other unknowns in the posteriori distribution
     - Apply to reconver image data from compression in compressive sensing.
 
 ## Getting Started
