@@ -32,6 +32,8 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Wiener Filtering
     - Auto/Cross-Correlation Checking 
     - MAP Esitmation 
+    - Gaussinal-Laplacian Conjugate Prior and extension to estimate other unknown in the posteriori distribution
+    - Apply to reconver image data from compression in compressive sensing.
 
 ## Getting Started
 
