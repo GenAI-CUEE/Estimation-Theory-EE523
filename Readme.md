@@ -22,14 +22,16 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Almost sure Convergence simulation. 
     - Homework Simulation
 
-- [x] [Tutorial 3.1](Tutorial3/main.ipynb): ML Esitmation, KL-Divergence minimizatoin
+- [x] [Tutorial 3](Tutorial3/main.ipynb): ML Esitmation, KL-Divergence minimizatoin
     - KL Divergence
     - Central Limit Theorem Example 
     - Variational Auto Encoder
     - Why KL Divergence is used in VAE
 
-- [ ] Tutorial 3.2: MAP Esitmation. This provides the use cases for Lecture 3-6.   
- 
+- [x] [Tutorial 4](Tutorial4/main.ipynb) Tutorial 3.2: Wiener Filter and MAP Esitmation.  
+    - Wiener Filtering
+    - Auto/Cross-Correlation Checking 
+    - MAP Esitmation 
 
 ## Getting Started
 
