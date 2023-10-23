@@ -1,4 +1,4 @@
-## Tutorial 1: What is an estimator? 
+## Tutorial 2: Probabilistic Convergence Visualization
 
 by *Suwichaya Suwanwimolkul, Ph.D.*
 

@@ -29,7 +29,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Why KL Divergence is used in VAE
     - Apply VAE to reconstruct the image data
 
-- [x] [Tutorial 4](Tutorial4/main.ipynb) Tutorial 3.2: Wiener Filter and MAP Esitmation.  
+- [x] [Tutorial 4](Tutorial4/main.ipynb): Wiener Filter and MAP Esitmation.  
     - Wiener Filtering
     - Auto/Cross-Correlation Checking 
     - MAP Esitmation 
