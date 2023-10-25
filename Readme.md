@@ -72,7 +72,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 ```
 @book{CUEE523,
   author        = {Suwichaya Suwanwimolkul},
-  title         = {{L}ecture {N}otes on {E}stimation {T}heory},
+  title         = {{L}ecture {N}otes on {E}stimation {T}heory {EE}523},
   month         = {Semester I},
   year          = {2023},
   publisher     ={Chulalongkorn Univeristy},
