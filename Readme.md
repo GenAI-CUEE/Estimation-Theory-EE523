@@ -17,10 +17,6 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-
-
-
-
     - Sampling from distirbution
     - Example of estimators (sample mean/sample variances)
     - Estimator properties (bias, mse, consistency). 
