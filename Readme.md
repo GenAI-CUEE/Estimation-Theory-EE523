@@ -36,8 +36,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Homework Simulation
 
 - [x] [Tutorial 3](Tutorial3/main.ipynb): KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*
-    - KL Divergence
-    - Central Limit Theorem Example 
+    - Review about KL Divergence 
     - Variational Auto Encoder
     - Why KL Divergence is used in VAE
     - Apply VAE to reconstruct the image data

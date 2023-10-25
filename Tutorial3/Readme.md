@@ -5,8 +5,7 @@ by *Suwichaya Suwanwimolkul, Ph.D.*
 The coding exercies and examples are used as parts of  *Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*  in **Estimation Theory EE2102523**. 
 
 The topics covered in this exercise are: 
-- [KL Divergence](#kl-divergence)  
-    - [Central Limit Theorem Example](#central-limit-theorem-clt)
+- [KL Divergence](#kl-divergence)   
 - [Variational Auto Encoder](#variational-auto-encoder-vae)
     - [What is it?](#what-is-variational-auto-encoder-vae)
     - [KL Divergence is used in learning](#why-we-need-kl-divergence-loss)
