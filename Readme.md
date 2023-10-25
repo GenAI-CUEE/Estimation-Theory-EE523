@@ -7,7 +7,7 @@ Our goal is to provide the code-based visualization and exercises to understand 
 
 [Link to Google Derive](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link)  
 
-## Topics
+### Topics
 
 I hope that at the end, I will be able to provide the coding scripts & excercises for the following topics
 
@@ -56,9 +56,9 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Auto/Cross-Correlation Checking 
     - MAP Esitmation 
     - Gaussian-Laplacian conjugate prior and extension to estimate other unknowns in the posteriori distribution
-    - Apply to reconver image data from compression in compressive sensing.
+    - Apply to reconstruct image data from compression in compressive sensing.
 
-## Getting Started
+### Getting Started
 
 1. Change the directory to the `Tutorial` folder.
 2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Readme.md)) for install dependencies. 
@@ -66,3 +66,16 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 
 * Course materials (such as HW and lecture notes) maybe provided in each `Tutorial` folder. 
 * Each tutorial runs independently in its own environment. 
+
+### Citation 
+
+```
+@book{CUEE523,
+  author        = {Suwichaya Suwanwimolkul},
+  title         = {{L}ecture {N}otes on {E}stimation {T}heory},
+  month         = {Semester I},
+  year          = {2023},
+  publisher     ={Chulalongkorn Univeristy},
+  url           = "https://github.com/GabbySuwichaya/Estimation-Theory-EE523"
+}
+```
