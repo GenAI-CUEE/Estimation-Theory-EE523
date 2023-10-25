@@ -22,7 +22,11 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Estimator properties (bias, mse, consistency). 
     - Homework Simulation
  
-- [x] [Tutorial 2](Tutorial2/main.ipynb): Probabilistic Convergence *to support Lecture II: Probabilistic Convergence*
+- [x] [Tutorial 2: Probabilistic Convergence *to support Lecture II: Probabilistic Convergence*](Tutorial2/main.ipynb) 
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
     - Convergence in distribution, 
     - Central limit Theorems, 
     - KL divergence, 
