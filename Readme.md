@@ -11,7 +11,16 @@ Our goal is to provide the code-based visualization and exercises to understand 
 
 I hope that at the end, I will be able to provide the coding scripts & excercises for the following topics
 
-- [x] [Tutorial 1](Tutorial1/main.ipynb): Estimator and its properties *to support Lecture I: What is Estimators?* 
+- [x] [Tutorial 1:  Estimator and its properties *to support Lecture I: What is Estimators?* ](Tutorial1/main.ipynb) 
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial1/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+
+
+
     - Sampling from distirbution
     - Example of estimators (sample mean/sample variances)
     - Estimator properties (bias, mse, consistency). 
