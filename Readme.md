@@ -27,6 +27,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+
     - Convergence in distribution, 
     - Central limit Theorems, 
     - KL divergence, 
