@@ -4,6 +4,15 @@ by *Suwichaya Suwanwimolkul, Ph.D.*
 
 The coding exercies and examples are used as parts of  *Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*  in **Estimation Theory EE2102523**. 
 
+The lecture handout for [`Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
+
+Let's start
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+or you can run `main.ipynb` locally for the coding exercies and examples.
+
 The topics covered in this exercise are: 
 - [KL Divergence](#kl-divergence)   
 - [Variational Auto Encoder](#variational-auto-encoder-vae)
@@ -24,8 +33,7 @@ References:
 
 ### Quick start 
 
-
-Install dependenies listed in `requirements.txt` by 
+You can also try everything on your local machine by installing dependenies listed in `requirements.txt` with 
 
 ```
 pip install -r requirements.txt
