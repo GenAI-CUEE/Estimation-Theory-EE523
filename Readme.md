@@ -3,7 +3,7 @@ by *Suwichaya Suwanwimolkul*.
 
 Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
 
-### Link to lectures and Homeworks
+### Link to lectures and homeworks
 
 [Link to Google Derive](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link)  
 
