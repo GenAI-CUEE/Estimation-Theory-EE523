@@ -4,7 +4,7 @@ by *Suwichaya Suwanwimolkul, Ph.D.*
 
 The coding exercies and examples are used as parts of  *Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*  in **Estimation Theory EE2102523**. 
 
-The lecture handout for [`Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
+The lecture handout for [`Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE`](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
 
 Let's start
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">

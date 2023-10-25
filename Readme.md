@@ -35,7 +35,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Almost sure Convergence simulation. 
     - Homework Simulation
 
-- [x] [Tutorial 3: KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*](Tutorial3/main.ipynb): 
+- [x] [Tutorial 3: KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*](Tutorial3/main.ipynb) 
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
@@ -46,7 +46,12 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Why KL Divergence is used in VAE
     - Apply VAE to reconstruct the image data
 
-- [x] [Tutorial 4](Tutorial4/main.ipynb): Wiener Filter and MAP Esitmation *to support Lecture VI: LMSE, Wiener Filtering, Maximum A Posteriori*  
+- [x] [Tutorial 4: Wiener Filter and MAP Esitmation *to support Lecture VI: LMSE, Wiener Filtering, Maximum A Posteriori*](Tutorial4/main.ipynb)
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
     - Wiener Filtering
     - Auto/Cross-Correlation Checking 
     - MAP Esitmation 
