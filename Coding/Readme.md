@@ -18,6 +18,6 @@ Please follow the following steps, so that I can check if the system is working 
 
 For example,  `6470160121/Coding/Step0_Testing.ipynb`
 
-- When you finished, please zip the folder (`6470160121.zip`) and submit it into `Coding` folder
+- When you finished, please zip the folder (`6470160121.zip`) and submit it via [MSTeam](https://teams.microsoft.com/_#/school/FileBrowserTabApp/General?groupId=2d8dd0eb-8fac-4cdb-8dd7-d70a1e9ab3b4&threadId=19:KkkpzATb2QVQXJ7M_IP5WYUzIkOVGtQLC2BX0QROmd01@thread.tacv2&ctx=channel) into `Testing_NotebookGrading` folder.
 
  
