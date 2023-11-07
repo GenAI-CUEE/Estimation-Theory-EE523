@@ -58,6 +58,15 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
     - Gaussian-Laplacian conjugate prior and extension to estimate other unknowns in the posteriori distribution
     - Apply to reconstruct image data from compression in compressive sensing.
 
+- [x] [Coding: System Checking for Jypyter Notebook Grading*](Coding/Step0_Testing.ipynb)
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Coding/Step0_Testing.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+    - Please try to answer the questions and submit the output Jupyter Notebook. 
+    - To check if all of you can use the system ....  
+
 ### Getting Started
 
 1. Change the directory to the `Tutorial` folder.

@@ -1,4 +1,4 @@
-## Coding:  testing the grading system for ipynb file.  
+## Coding: System Checking for Jypyter Notebook Grading 
 
 by *Suwichaya Suwanwimolkul, Ph.D.*
 
