@@ -76,7 +76,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a> 
 
-Total scores: 36 to be collected as 20 scores of your homework assigment.  
+Total scores is 36 that is to be collected as 20 scores for your homework 4.  
 
 Please read [Homework4 Readme](Homework4/Readme.md) carefully 
 
