@@ -1,5 +1,9 @@
 ## Simulations
 
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Homework4/simulation.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 Suppose that we want to estimate $\bm{X} \in \mathcal{R^N}$ from the observed data $\bm{Y} \in \mathcal{R^N}$ where $\bm{Y} = \bm{X} + N$; where $N\in \mathcal{R}$ is the noise corrupting the target signal. 
 
 The probabilistic relationship between $\bm{X}$ and $\bm{Y}$ can be represented by the following probabilistic models:
