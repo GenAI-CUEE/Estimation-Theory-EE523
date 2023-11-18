@@ -1,27 +1,23 @@
 ## Simulations
+ 
+Suppose that we want to estimate $\mathbf{X} \in \mathcal{R^N}$ from the observed data $\mathbf{Y} \in \mathcal{R^N}$ where $\mathbf{Y} = \mathbf{X} + N$; where $N\in \mathcal{R}$ is the noise corrupting the target signal. 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Homework4/simulation.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+The probabilistic relationship between $\mathbf{X}$ and $\mathbf{Y}$ can be represented by the following probabilistic models:
 
-Suppose that we want to estimate $\bm{X} \in \mathcal{R^N}$ from the observed data $\bm{Y} \in \mathcal{R^N}$ where $\bm{Y} = \bm{X} + N$; where $N\in \mathcal{R}$ is the noise corrupting the target signal. 
-
-The probabilistic relationship between $\bm{X}$ and $\bm{Y}$ can be represented by the following probabilistic models:
-
-- The likelihood is $ f_{\bm{Y}|\bm{X}}(\bm{y}|\bm{x}) = \mathcal{N}(\bm{y}| \bm{x}, \sigma_V^2) \propto \prod_i \frac{1}{\sqrt{2 \pi \sigma_V^2}} \exp{ - \frac{(y_i - x_i)^2}{2 \sigma_V^2} }$. 
+- The likelihood is $ f_{\mathbf{Y}|\mathbf{X}}(\mathbf{y}|\mathbf{x}) = \mathcal{N}(\mathbf{y}| \mathbf{x}, \sigma_V^2) \propto \prod_i \frac{1}{\sqrt{2 \pi \sigma_V^2}} \exp{ - \frac{(y_i - x_i)^2}{2 \sigma_V^2} }$. 
 
 - The prior for $x$ is a Gaussian-Gamma distribution, that is,  
 
-	- $\bm{X} \sim f_{\bm{X}}(\bm{x})$  is $ f_{X }(\bm{x}| \bm{\mu}, \bm{\tau}) = \mathcal{N}(\bm{x}| \bm{\mu}, \bm{\tau}) \propto  \prod_i \sqrt{\frac{\tau_i}{2 \pi}} \exp{ \frac{\tau_i (x_i - \mu_i)^2}{2} }$ 
-	- $\bm{\tau} \sim f_{\bm{\tau}}(\bm{\tau}) = \text{Gamma}(\bm{\tau}; \alpha, \beta) \propto  \prod_i  \tau_i^{\alpha - 1} \exp{- \beta \tau_i}$  
+	- $\mathbf{X} \sim f_{\mathbf{X}}(\mathbf{x})$  is $ f_{X }(\mathbf{x}| \mathbf{\mu}, \mathbf{\tau}) = \mathcal{N}(\mathbf{x}| \mathbf{\mu}, \mathbf{\tau}) \propto  \prod_i \sqrt{\frac{\tau_i}{2 \pi}} \exp{ \frac{\tau_i (x_i - \mu_i)^2}{2} }$ 
+	- $\mathbf{\tau} \sim f_{\mathbf{\tau}}(\mathbf{\tau}) = \text{Gamma}(\mathbf{\tau}; \alpha, \beta) \propto  \prod_i  \tau_i^{\alpha - 1} \exp{- \beta \tau_i}$  
 
-It is assume that the true distribution of $\bm{X}$ is the same as the prior distribution.  
+It is assume that the true distribution of $\mathbf{X}$ is the same as the prior distribution.  
 
 Therefore, the joint distribution among the random variables are 
 
-$$p(\bm{y}, \bm{x}, \bm{\tau}; \bm{\mu}, \sigma_V^2, \alpha, \beta) = \mathcal{N}(\bm{y}| \bm{x}, \sigma_V^2) \mathcal{N}(\bm{x}| \bm{\mu}, \bm{\tau}) \text{Gamma}(\bm{\tau}; \alpha, \beta).$$
+$$p(\mathbf{y}, \mathbf{x}, \mathbf{\tau}; \mathbf{\mu}, \sigma_V^2, \alpha, \beta) = \mathcal{N}(\mathbf{y}| \mathbf{x}, \sigma_V^2) \mathcal{N}(\mathbf{x}| \mathbf{\mu}, \mathbf{\tau}) \text{Gamma}(\mathbf{\tau}; \alpha, \beta).$$
 
-Your observations are the random sample vector $\bm{Y}^1, \bm{Y}^2, ..., \bm{Y}^k$ that are independently and identically distributes according to each element in the multi-variate $\bm{Y}$ in $\mathcal{R^N}$.
+Your observations are the random sample vector $\mathbf{Y}^1, \mathbf{Y}^2, ..., \mathbf{Y}^k$ that are independently and identically distributes according to each element in the multi-variate $\mathbf{Y}$ in $\mathcal{R^N}$.
 
 All the implementation (60 scores) and analysis (40 scores) shall be done in a single Jupyter notebook. 
 
