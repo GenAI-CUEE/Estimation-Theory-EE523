@@ -1,0 +1,19 @@
+# Jupyter Notebook
+**/.ipynb_checkpoints/
+
+# Ignore figures and output
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.pdf
+**/*.svg
+**/*.eps
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/__pycache__/
+
+# Ignore Jupyter Notebook generated files
+**/*.html
+**/*.pkl
