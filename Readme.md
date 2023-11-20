@@ -102,7 +102,7 @@ Link to [MS Team Folder](https://teams.microsoft.com/_#/school/FileBrowserTabApp
   title         = {{L}ecture {N}otes on {E}stimation {T}heory {EE}523},
   month         = {Semester I},
   year          = {2023},
-  publisher     ={Chulalongkorn Univeristy},
+  publisher     = {Chulalongkorn Univeristy},
   url           = "https://github.com/GabbySuwichaya/Estimation-Theory-EE523"
 }
 ```
