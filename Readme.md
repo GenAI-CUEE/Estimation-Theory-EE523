@@ -1,7 +1,6 @@
-This Github page is a part of **Estimation Theory EE2102523** 
-by *Suwichaya Suwanwimolkul*.
+ 
 
-Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of the lecture.
+Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of lectures in **Estimation Theory EE2102523** by *Suwichaya Suwanwimolkul*.
 
 ### Link to lectures and homeworks
 
@@ -9,7 +8,7 @@ Our goal is to provide the code-based visualization and exercises to understand 
 
 ### Topics
 
-I hope that at the end, I will be able to provide the coding scripts & excercises for the following topics
+The coding scripts & excercises are 
 
 - [x] [Tutorial 1:  Estimator and its properties *to support Lecture I: What is Estimators?* ](Tutorial1/main.ipynb) 
 
@@ -76,7 +75,7 @@ I hope that at the end, I will be able to provide the coding scripts & excercise
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a> 
 
-Total scores is 36 that is to be collected as 20 scores for your homework 4.  
+Total scores is 30 that is to be collected as 20 scores for your Homework 4.  
 
 Please read [Homework4 Readme](Homework4/Readme.md) carefully 
 
@@ -88,7 +87,7 @@ Link to [MS Team Folder](https://teams.microsoft.com/_#/school/FileBrowserTabApp
 ### Getting Started
 
 1. Change the directory to the `Tutorial` folder.
-2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Readme.md)) for install dependencies. 
+2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Readme.md)) for installing dependencies. 
 3. You may execute the `main` file in python or ipynb fileformat. 
 
 * Course materials (such as HW and lecture notes) maybe provided in each `Tutorial` folder. 
