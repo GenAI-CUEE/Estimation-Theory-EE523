@@ -1,39 +1,35 @@
-## Tutorial 3: MLE-KL and Application of KL Divergence in VAE 
+## Tutorial 2: Probabilistic Convergence Visualization
 
 by *Suwichaya Suwanwimolkul, Ph.D.*
 
-The coding exercies and examples are used as parts of  *Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*  in **Estimation Theory EE2102523**. 
+The coding exercies and examples are used as parts of  *Lecture III: Probabilistic Convergence* in **Estimation Theory EE2102523**. 
+The lecture handout for [`Lecture II: Probabilistic Convergence and Homework](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
 
-The lecture handout for [`Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE`](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
-
-Let's start
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
+Let's start  
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
 or you can run `main.ipynb` locally for the coding exercies and examples.
 
+
 The topics covered in this exercise are: 
-- [KL Divergence](#kl-divergence)   
-- [Variational Auto Encoder](#variational-auto-encoder-vae)
-    - [What is it?](#what-is-variational-auto-encoder-vae)
-    - [KL Divergence is used in learning](#why-we-need-kl-divergence-loss)
-    - [Training](#training-phase)
-    - [Testing](#testing-phase)
-    - [Impact of KL Divergence](#how-kl-div-loss-impact-the-encoded-features)
-
-
-Note: Don't forget to do `pip install -r requirements.txt`
-
-References:
-
-1. We use the example of variational auto encoder from [pytorch/examples](https://github.com/pytorch/examples)
-2. Also, we obtain most of the content about the kl loss used in training  variational auto encoder from [This Medium Page](https://medium.com/@outerrencedl/variational-autoencoder-and-a-bit-kl-divergence-with-pytorch-ce04fd55d0d7) ...
+- [Convergence in Distribution](#convergences-in-distribution)
+    - [Simulation of Central Limit Theorem](#simulation-of-central-limit-theorem-bernoulli--uniform)
+    - [KL Divergence](#kl-divergence)
+- [Convergence in Probability](#convergence-in-probability)
+    - [Simulation of Lecture II Example](#simulation-of-example---noise-in-lecture-2)
+- [Almost Sure Convergence](#almost-surely-converge)
+    - [Converge almost completely](#converges-almost-completely)
+    - [Simulation of HW 2.1.3](#simulation-for-the-3rd-question-of-example-16) 
 
 
 ### Quick start 
 
-You can also try everything on your local machine by installing dependenies listed in `requirements.txt` with 
+You can also try everything on your local machine by ...
+
+
+Install dependenies listed in `requirements.txt` by 
 
 ```
 pip install -r requirements.txt

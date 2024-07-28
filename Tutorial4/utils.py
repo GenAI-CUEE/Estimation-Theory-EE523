@@ -1,143 +1,108 @@
-import numpy as np 
-import matplotlib.pyplot as plt 
+
+# This code is part of Estimation Theory EE2102523 
+# Lecture II: Probabilistic Convergence 
+# by Suwichaya Suwanwimolkul 
+
 import numpy as np
-from scipy.linalg import toeplitz 
-import pdb
+import scipy.stats as sp
+import matplotlib.pyplot as plt
+import math
+import os
 
-import torch
-import torch.utils.data
-from torch import nn, optim
-from torch.nn import functional as F
-from torchvision import datasets, transforms
-from torchvision.utils import save_image
+def KL_expo(ZN_prob, GAUSS_prob, nmu=0, nsigma=1): 
+    KL = np.sum(GAUSS_prob * np.log(GAUSS_prob / ZN_prob))
+    return KL
 
-
-def sample_mean(data2D):
-    mean_2d = np.mean(data2D, axis=2)    
-    return mean_2d
-
-def sample_variance(data2D):
-    sample_variance_2d =  np.std(data2D, ddof=0, axis=2)**2   
-    return sample_variance_2d
-
-def update_b(data2D):
-    mean_2d = np.mean(data2D, axis=2)
-    b = np.mean(np.abs(data2D - mean_2d.reshape(28,28,1)), axis=2) 
-    return b
-
-
-def LassoEstimator(y, A, sigma_v, lambda_gamm, mu_gamma): 
-
-    dff = sigma_v/(2*lambda_gamm  )
- 
-    X   = (y.transpose().dot(A)).transpose()
-
-    x_return = np.zeros_like(X) 
-    value_a = X - dff   
-
-    case_a  = (value_a > mu_gamma) *(value_a > 0 )
-    x_return[case_a] = value_a[case_a]
- 
-    value_b = X + dff  
-    case_b  = (value_b < mu_gamma ) *(value_b > 0 )
-    x_return[case_b] = value_b[case_b]
-     
-    return x_return
-
-def loopy_LassoEstimation(y, A, sigma_v, lambda_gamm, mu_gamma, num_iteration):
-    mu_gamma_updated    = mu_gamma
-    lambda_gamm_updated = lambda_gamm
-    Num_samples = y.shape[1]
-    x_return_list = [] 
-    for i in range(num_iteration):
-        x_return = LassoEstimator(y, A, sigma_v, lambda_gamm_updated, mu_gamma_updated)  
-        data2D_update       = x_return.reshape(28,28, Num_samples) 
-        mu_gamma_updated    = sample_mean(data2D_update) 
-        mu_gamma_updated    = mu_gamma_updated.reshape(28*28,1)
-
-        lambda_gamm_updated = update_b(data2D_update) 
-        lambda_gamm_updated = lambda_gamm_updated.reshape(28*28,1)
-        x_return_list.append(x_return)
-  
+def CTL_simulation(N_round=2, N_size= 1000, orginal_distribution="Bernoulli", dirpath=None, hide_showplots=False):
+    XN = 0
+    if orginal_distribution == "Bernoulli":
         
-    return x_return_list
+        p  = 0.5
+        
+        MU_Xi  = p
+        STD_Xi = np.sqrt(p*(1-p))
+
+        for count_round in range(N_round):
+            XN += np.random.binomial(size=N_size, p=p, n=1) 
+
+    else:
+        a = 0 
+        b = 1 
+
+        MU_Xi  = 0.5*(a + b)
+        STD_Xi = np.sqrt((1/12)*(b - a)**2 )
+
+        for count_round in range(N_round):
+            XN += np.random.uniform(a,b,N_size)
 
 
-if __name__ == "__main__":
+    # Calculated emperical mean 
+    mean_emp = np.mean(XN) 
+    std_emp  = np.std(XN)
+
+    # Calculated true mean 
+    mu = N_round*MU_Xi  
+    sigma =  np.sqrt(N_round)*STD_Xi  
+
+    # Normalize
+    ZN = (XN - mu) / sigma
+
+    # Gaussian samples
+    gauss = np.random.standard_normal(N_size)
+    nsigma = 1
+    nmu = 0  
+
+    ############################## Printing & Plotting ############################
+    if not(hide_showplots):
+        print("Mean per RV $\mu_x$: %.2f"  % MU_Xi)
+        print("Std  per RV $\sigma_x$: %.2f" % STD_Xi)
+
+        print('==============================')
+
+        print("N round: %d" % N_round) 
+
+        print("Empirical Mean: %.2f"  % mean_emp)
+        print("Empirical std: %.2f" % std_emp) 
+
+        print("True Mean ($n \mu_x$): %.2f"  %  mu)
+        print("True standard deviation ($\sqrt{n} \sigma_x$): %.2f"  % sigma)
+
+        print('==============================')
+
+        print("Normalized Mean: %.2f"  % np.mean(ZN))
+        print("Normalized std: %.2f" % np.std(ZN)) 
  
 
-    test_loader = torch.utils.data.DataLoader(
-        datasets.MNIST('../data', train=False, download=True,
-                    transform=transforms.ToTensor()), batch_size=1, shuffle=False)
+    # Plotting
 
-    data_vect = []
-    label_vect_ = []
-    for i, (data, label) in enumerate(test_loader):
-        data_vect.append(data.view(28,28).numpy())
-        label_vect_.append(label.numpy()[0])
-
-    label_vect  = np.array(label_vect_)
-    data2D      = np.stack(data_vect, axis=-1)
-    Num_samples = data2D.shape[2]
+    plt.figure(figsize=(10,7))
+    
+    count, bins, ignored = plt.hist(gauss, np.arange(-3, 3 + 0.2, 0.2), alpha=0.8, color="orange" , density=True, label="Normal Samples")
+    plt.plot(bins, 1/(nsigma * np.sqrt(2 * np.pi)) *  np.exp( - (bins - nmu)**2 / (2 * nsigma**2) ),  linewidth=3, color='r', label="Standard Normal") 
+    count_Zn, bins_Zn, ignored_Zn = plt.hist(ZN, np.arange(-3, 3 + 0.2, 0.2), alpha=0.5, color="Navy" , density=True, label="Zn (CTL)")
     
     
-    mu_gamma_    = sample_mean(data2D)
-    mu_gamma    =  mu_gamma_.reshape(28*28,1)
+    KL_scores = KL_expo(count_Zn + 1e-6, count + 1e-6 , nmu=0, nsigma=1)
+    if not(hide_showplots):
+        print("KL %.2f" % KL_scores )
 
-    sample_variance_ = update_b(data2D) #sample_variance(data2D)
-    lambda_gamm      = sample_variance_.reshape(28*28,1)
- 
+    textstr = '\n'.join([ 
+        "N round: "+ str(N_round),  
+        "Normalized Mean: %.2f"  % np.mean(ZN), 
+        "Normalized std: %.2f" % np.std(ZN),
+        "KL Divergence: %.2f" % KL_scores])
 
-    sigma_v           = 1e-10
-    num_iteration     = 5
-    compression_ratio = 0.5
+    plt.legend() 
+    plt.text( -2.85, 0.95, textstr,horizontalalignment='left', verticalalignment='top', family='monospace')
+    plt.ylabel("Freq. (Density)")
+    plt.xlabel("Samples")
+    plt.title("CTL at N=%d from %s" % (N_round, orginal_distribution))
+    plt.xlim(-3,3)
+    plt.ylim(0,1.0)
+    plt.savefig(os.path.join(dirpath, "CLT_N%d_%s.pdf" % (N_round, orginal_distribution)))
+    plt.savefig(os.path.join(dirpath, "CLT_N%d_%s.png" % (N_round, orginal_distribution)))
+    if not(hide_showplots):
+        plt.show() 
+    plt.close('all')
 
-    n_compressed_data = int(compression_ratio*28*28) 
-    A                 = np.random.randn(n_compressed_data, 28*28)/np.sqrt(n_compressed_data)  
-    v                 = sigma_v*np.random.randn(1, 1)  
-    yA                = A.dot(data2D.reshape(28*28,-1)).reshape(n_compressed_data,-1)  
-
-    y                 = yA  + v 
-
-    x_hat_list        = loopy_LassoEstimation(y, A,  0.01, lambda_gamm, mu_gamma, num_iteration)    
-    
-    Num_samples       = y.shape[1]
-
-    x_hat_2D_6    = x_hat_list[-5].reshape(28,28, Num_samples)[:,:,0]    
-    x_hat_2D_7    = x_hat_list[-4].reshape(28,28, Num_samples)[:,:,0]    
-    x_hat_2D_8    = x_hat_list[-3].reshape(28,28, Num_samples)[:,:,0]    
-    x_hat_2D_9    = x_hat_list[-2].reshape(28,28, Num_samples)[:,:,0]  
-    x_hat_2D_10   = x_hat_list[-1].reshape(28,28, Num_samples)[:,:,0] 
-    
-    fig, ax = plt.subplots(nrows=2,ncols=5)
-
-    ax[0,0].imshow(data2D[:,:,0] ) 
-    ax[0,0].set_title("Original")
-    ax[0,1].imshow(y[:,0].reshape(-1,28)) 
-    ax[0,1].set_title("Compressed")
-
-    ax[0,0].set_axis_off()
-    ax[0,1].set_axis_off()
-    ax[0,2].set_axis_off()
-    ax[0,3].set_axis_off()
-    ax[0,4].set_axis_off()
- 
-
-    ax[1,0].imshow(x_hat_2D_6)
-    ax[1,1].imshow(x_hat_2D_7)
-    ax[1,2].imshow(x_hat_2D_8)
-    ax[1,3].imshow(x_hat_2D_9)
-    ax[1,4].imshow(x_hat_2D_10)
-
-    ax[1,0].set_axis_off()
-    ax[1,1].set_axis_off()
-    ax[1,2].set_axis_off()
-    ax[1,2].set_title("Reconstructed")
-    ax[1,3].set_axis_off()
-    ax[1,4].set_axis_off()
-    
-
-    plt.show()
-    pdb.set_trace()
-
-     
+    return KL_scores

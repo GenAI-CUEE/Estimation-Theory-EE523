@@ -1,14 +1,42 @@
  
 
-Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of lectures in **Estimation Theory EE2102523** by *Suwichaya Suwanwimolkul*.
+Our goal is to provide the code-based visualization and exercises to understand the mathematics behind each of lectures in **Estimation Theory EE2102523 Year 2024** by *Suwichaya Suwanwimolkul*.
 
-### Link to lectures and homeworks
 
-[Link to Google Derive](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link)  
+## Link to handout slides
 
-### Topics
+- Link to [Google Derive](https://drive.google.com/drive/folders/1ay16iXuyqeCj_OQwCk_2MEGkXoVsAEs1?usp=sharing)   
+- Link to [MS Team Folder](https://teams.microsoft.com/_#/school/FileBrowserTabApp/General?groupId=2d8dd0eb-8fac-4cdb-8dd7-d70a1e9ab3b4&threadId=19:KkkpzATb2QVQXJ7M_IP5WYUzIkOVGtQLC2BX0QROmd01@thread.tacv2&ctx=channel). 
 
-The coding scripts & excercises are 
+## Quick start
+
+Before first, you should create a conda environment for this course:
+
+```
+conda create -n EE523
+```
+
+Install some commonly used packages. 
+First activate EE523 environment and install pip into anaconda environment. 
+
+```
+conda activate EE523
+conda install pip 
+```
+
+Then, install the packages by pip... 
+
+``` 
+pip install numpy pandas tqdm matplotlib joypy
+```
+
+If you have already install these packages, you can skip the first few steps in the notebook.  
+
+
+
+### The coding scripts & excercises 
+
+
 
 - [x] [Tutorial 1:  Estimator and its properties *to support Lecture I: What is Estimators?* ](Tutorial1/main.ipynb) 
 
@@ -69,11 +97,11 @@ The coding scripts & excercises are
     - For example,  `6470160121/Coding/Step0_Testing.ipynb` (VERY IMPORTANT) 
     - When you finished, please zip the folder (`6470160121.zip`) and submit it into  `Testing_NotebookGrading` folder in MS Team Folder 
 
-- [x] [Homework 4](Homework4/simulation.ipynb)   
+<!-- - [x] [Homework 4](Homework4/simulation.ipynb)   
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Homework4/simulation.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> 
+</a>  -->
 
 Total scores is 30 that is to be collected as 20 scores for your Homework 4.  
 
@@ -82,16 +110,14 @@ Please read [Homework4 Readme](Homework4/Readme.md) carefully
     - You can also visit the simulation homework with the attached google collab link.    
     - Deadline 06/12/2023 
       
-Link to [MS Team Folder](https://teams.microsoft.com/_#/school/FileBrowserTabApp/General?groupId=2d8dd0eb-8fac-4cdb-8dd7-d70a1e9ab3b4&threadId=19:KkkpzATb2QVQXJ7M_IP5WYUzIkOVGtQLC2BX0QROmd01@thread.tacv2&ctx=channel). 
 
 ### Getting Started
 
-1. Change the directory to the `Tutorial` folder.
+1. Relocate to the directory, e.g., `Tutorial` folder.
 2. Look for the  instructions (e.g. [Tutorial 1 Readme](Tutorial1/Readme.md)) for installing dependencies. 
 3. You may execute the `main` file in python or ipynb fileformat. 
 
-* Course materials (such as HW and lecture notes) maybe provided in each `Tutorial` folder. 
-* Each tutorial runs independently in its own environment. 
+ 
 
 ### Citation 
 
@@ -100,7 +126,7 @@ Link to [MS Team Folder](https://teams.microsoft.com/_#/school/FileBrowserTabApp
   author        = {Suwichaya Suwanwimolkul},
   title         = {{L}ecture {N}otes on {E}stimation {T}heory {EE}523},
   month         = {Semester I},
-  year          = {2023},
+  year          = {2024},
   publisher     = {Chulalongkorn Univeristy},
   url           = "https://github.com/GabbySuwichaya/Estimation-Theory-EE523"
 }

@@ -1,43 +1,39 @@
-## Tutorial 4:  Wiener Filtering and Maximum A Posteriori and their applications 
+## Tutorial 3: MLE-KL and Application of KL Divergence in VAE 
 
 by *Suwichaya Suwanwimolkul, Ph.D.*
 
-The coding exercies and examples are used as parts of  *Lecture VI: LMSE, Wiener Filtering, Maximum A Posteriori*  in **Estimation Theory EE2102523**. 
+The coding exercies and examples are used as parts of  *Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*  in **Estimation Theory EE2102523**. 
 
-The lecture handout for [`Lecture VI: LMSE, Wiener Filtering, Maximum A Posteriori`](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
+The lecture handout for [`Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE`](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
 
 Let's start
-
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
 or you can run `main.ipynb` locally for the coding exercies and examples.
 
-The topics covered in this exercise are:
-
-- [Wiener Filtering](#wiener-filter)  
-    - [Initialization](#initial-settings)
-    - [Wiener Filter Algorithm](#wiener-filter-algorithm)
-    - [Apply Wiener Fitler](#apply-wiener-filter)
-- [Maximum A Posteriori Estimation](#maximum-a-posteriori-estimation)
-    - [The MAP Algorithm](#map-algorithm)
-    - [Extension to estimate parameters in priors](#extend-the-map-estimator-to-update-the-parameters-of-prior-distribution)
-    - [Apply to reconstruct compressed data](#apply-map-estimation)
+The topics covered in this exercise are: 
+- [KL Divergence](#kl-divergence)   
+- [Variational Auto Encoder](#variational-auto-encoder-vae)
+    - [What is it?](#what-is-variational-auto-encoder-vae)
+    - [KL Divergence is used in learning](#why-we-need-kl-divergence-loss)
+    - [Training](#training-phase)
+    - [Testing](#testing-phase)
+    - [Impact of KL Divergence](#how-kl-div-loss-impact-the-encoded-features)
 
 
 Note: Don't forget to do `pip install -r requirements.txt`
- 
- 
+
 References:
 
-1. How to check https://online.stat.psu.edu/stat510/
-2. Coding (in matlab version): https://dspcookbook.github.io/ ...
- 
+1. We use the example of variational auto encoder from [pytorch/examples](https://github.com/pytorch/examples)
+2. Also, we obtain most of the content about the kl loss used in training  variational auto encoder from [This Medium Page](https://medium.com/@outerrencedl/variational-autoencoder-and-a-bit-kl-divergence-with-pytorch-ce04fd55d0d7) ...
+
+
 ### Quick start 
 
-
-Install dependenies listed in `requirements.txt` by 
+You can also try everything on your local machine by installing dependenies listed in `requirements.txt` with 
 
 ```
 pip install -r requirements.txt
