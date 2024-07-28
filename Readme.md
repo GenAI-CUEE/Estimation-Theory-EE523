@@ -38,18 +38,27 @@ If you have already install these packages, you can skip the first few steps in 
 
 
 
-- [x] [Tutorial 1:  Estimator and its properties *to support Lecture I: What is Estimators?* ](Tutorial1/main.ipynb) 
+- [x] [Tutorial 1: What is random sampling?* ](Tutorial1/main.ipynb) 
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial1/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
     - Sampling from distirbution
-    - Example of estimators (sample mean/sample variances)
-    - Estimator properties (bias, mse, consistency). 
-    - Homework Simulation
+    - Example of estimators (sample mean) 
  
-- [x] [Tutorial 2: Probabilistic Convergence *to support Lecture II: Probabilistic Convergence*](Tutorial2/main.ipynb) 
+- [x] [Tutorial 2: Estimator properties](Tutorial2/main.ipynb) 
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+    - Estimator properties, 
+    - Bias, MSE, Consistency 
+    - Example of estimators (sample mean and sample variance)  
+    - Homework 1. Simulation 
+
+- [x] [Tutorial 3: Probabilistic Convergence](Tutorial2/main.ipynb) 
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
@@ -60,7 +69,7 @@ If you have already install these packages, you can skip the first few steps in 
     - KL divergence, 
     - Convergence in probability, 
     - Almost sure Convergence simulation. 
-    - Homework Simulation
+    - Homework 4. Simulation. 
 
 - [x] [Tutorial 3: KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*](Tutorial3/main.ipynb) 
 
@@ -85,7 +94,7 @@ If you have already install these packages, you can skip the first few steps in 
     - Gaussian-Laplacian conjugate prior and extension to estimate other unknowns in the posteriori distribution
     - Apply to reconstruct image data from compression in compressive sensing.
 
-- [x] [Coding: System Checking for Jypyter Notebook Grading*](Coding/Step0_Testing.ipynb)
+<!-- - [x] [Coding: System Checking for Jypyter Notebook Grading*](Coding/Step0_Testing.ipynb)
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Coding/Step0_Testing.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
@@ -95,7 +104,7 @@ If you have already install these packages, you can skip the first few steps in 
     - Please implement your work in the provided `.ipynb` file.   
     - Once you finished, put the current folder that contains your `.ipynb` file into a new folder that has  your student id  as the folder name.  
     - For example,  `6470160121/Coding/Step0_Testing.ipynb` (VERY IMPORTANT) 
-    - When you finished, please zip the folder (`6470160121.zip`) and submit it into  `Testing_NotebookGrading` folder in MS Team Folder 
+    - When you finished, please zip the folder (`6470160121.zip`) and submit it into  `Testing_NotebookGrading` folder in MS Team Folder  -->
 
 <!-- - [x] [Homework 4](Homework4/simulation.ipynb)   
 
@@ -103,13 +112,13 @@ If you have already install these packages, you can skip the first few steps in 
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>  -->
 
-Total scores is 30 that is to be collected as 20 scores for your Homework 4.  
+<!-- Total scores is 30 that is to be collected as 20 scores for your Homework 4.  
 
 Please read [Homework4 Readme](Homework4/Readme.md) carefully 
 
     - You can also visit the simulation homework with the attached google collab link.    
     - Deadline 06/12/2023 
-      
+       -->
 
 ### Getting Started
 
