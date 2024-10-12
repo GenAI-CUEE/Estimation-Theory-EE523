@@ -71,6 +71,15 @@ If you have already install these packages, you can skip the first few steps in 
     - Almost sure Convergence simulation. 
     - Homework 4. Simulation. 
 
+- [x] [Tutorial 3-Part2: image denoising with sample mean and Fit dist](Tutorial3part2/main.ipynb) 
+
+<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3part2/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+    - Denoising with sample mean
+    - Fit dist
+
 - [x] [Tutorial 4: KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*](Tutorial4/main.ipynb) 
 
 <a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
