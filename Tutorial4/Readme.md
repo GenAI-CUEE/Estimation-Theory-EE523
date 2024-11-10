@@ -7,7 +7,7 @@ The coding exercies and examples are used as parts of  *Lecture V: Maximum A Pos
 The lecture handout for [`Lecture V: Maximum A Posteriori Estimation`](https://drive.google.com/drive/folders/1VAEFqNYpjVlbc7dac92entSJlO_gzd-6?usp=drive_link) are attached in Google drive.
 
 Let's start
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb)">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 

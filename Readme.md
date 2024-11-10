@@ -80,28 +80,26 @@ If you have already install these packages, you can skip the first few steps in 
     - Denoising with sample mean
     - Fit dist
 
-- [x] [Tutorial 4: KL-Divergence Loss *to support Lecture V: MLE-KL, Conditional MLE,  MLE-MSE, MLE-MAE, MMSE*](Tutorial4/main.ipynb) 
+- [x] [Tutorial 4: Lecture V: Maximum A Posteriori Estimation*](Tutorial4/main.ipynb) 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial4/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-    - Review about KL Divergence 
+    - Maximum A Posteriori Estimation 
+    - Apply to MAP to reconstruct compressed data    
+    - Apply to ML to reconstruct compressed data  
+
+- [x] [Tutorial 5: Lecture V: MLE-KL*](Tutorial5/main.ipynb)
+
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial5/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+    - KL Divergence
     - Variational Auto Encoder
     - Why KL Divergence is used in VAE
     - Apply VAE to reconstruct the image data
-
-- [x] [Tutorial 5: Wiener Filter and MAP Esitmation *to support Lecture VI: LMSE, Wiener Filtering, Maximum A Posteriori*](Tutorial5/main.ipynb)
-
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial5/main.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-    - Wiener Filtering
-    - Auto/Cross-Correlation Checking 
-    - MAP Esitmation 
-    - Gaussian-Laplacian conjugate prior and extension to estimate other unknowns in the posteriori distribution
-    - Apply to reconstruct image data from compression in compressive sensing.
 
 <!-- - [x] [Coding: System Checking for Jypyter Notebook Grading*](Coding/Step0_Testing.ipynb)
 
