@@ -40,7 +40,7 @@ If you have already install these packages, you can skip the first few steps in 
 
 - [x] [Tutorial 1: What is random sampling?* ](Tutorial1/main.ipynb) 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial1/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial1/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -49,7 +49,7 @@ If you have already install these packages, you can skip the first few steps in 
  
 - [x] [Tutorial 2: Estimator properties](Tutorial2/main.ipynb) 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial2/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -60,7 +60,7 @@ If you have already install these packages, you can skip the first few steps in 
 
 - [x] [Tutorial 3: Probabilistic Convergence](Tutorial3/main.ipynb) 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -73,11 +73,11 @@ If you have already install these packages, you can skip the first few steps in 
 
 - [x] [Tutorial 3-Part2: image denoising with sample mean and Fit dist](Tutorial3part2/main.ipynb) 
 
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3part2/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial3part2/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-    - Denoising with sample mean
+    - Image denoising with sample mean
     - Fit dist
 
 - [x] [Tutorial 4: Lecture V: Maximum A Posteriori Estimation*](Tutorial4/main.ipynb) 

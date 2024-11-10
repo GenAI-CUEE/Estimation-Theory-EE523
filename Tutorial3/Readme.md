@@ -5,7 +5,7 @@ by *Suwichaya Suwanwimolkul, Ph.D.*
 The coding exercies and examples are used as parts of  *Probabilistic Convergence* in **Estimation Theory EE2102523**.  
 
 Let's start  
-<a target="_blank" href="https://colab.research.google.com/github/GabbySuwichaya/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/GenAI-CUEE/Estimation-Theory-EE523/blob/master/Tutorial3/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
